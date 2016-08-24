@@ -47,8 +47,6 @@
 		226153B11D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCLaboratoryDataGeneratorSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		226153B51D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCLaboratoryDataGeneratorSwiftUITests.swift; sourceTree = "<group>"; };
 		226153B71D6CE66D0010C605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		226153C31D6CE9390010C605 /* PCGaussianDataGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCGaussianDataGenerator.h; sourceTree = "<group>"; };
-		226153C41D6CE9390010C605 /* PCGaussianDataGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCGaussianDataGenerator.m; sourceTree = "<group>"; };
 		226FE50C1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCGuassianDataGenerator.swift; sourceTree = "<group>"; };
 		226FE50F1D6DEAC400EF7584 /* TestPlayGround.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestPlayGround.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,8 +84,6 @@
 				226153A91D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftTests */,
 				226153B41D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftUITests */,
 				226153961D6CE66D0010C605 /* Products */,
-				226153C31D6CE9390010C605 /* PCGaussianDataGenerator.h */,
-				226153C41D6CE9390010C605 /* PCGaussianDataGenerator.m */,
 			);
 			sourceTree = "<group>";
 		};

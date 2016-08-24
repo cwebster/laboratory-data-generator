@@ -12,37 +12,64 @@ struct PCGaussianData {
     var mean: Double
     var standardDeviation: Double
     var numResultsRequired: Int
-    var valid = false
-    var next = 0.0
+    private var valid = false
+    private var next = 0.0
     
-    func rand_helper() -> Double {
-        let time = Int(NSDate().timeIntervalSinceReferenceDate)
-        srand48(time)
-        let random_seed = drand48()
-        return random_seed
+    init(mean: Double, standardDeviation: Double, numResultsRequired: Int) {
+        self.mean   = mean
+        self.standardDeviation = standardDeviation
+        self.numResultsRequired  = numResultsRequired
     }
     
-    
-    func createDistribution() -> [[String:Double]] {
-        // loops over number of tests to generate values
+    mutating func createDistribution() -> [Int:Double] {
+        var results = [Int:Double]()
         
+        for index in 1...numResultsRequired {
+            results[index] = generateRandomNumber()
+            print("\(index) result is \(results[index])")
+        }
+        return results
     }
     
-    mutating func generateRandomNumber() -> Double {
-        if self.valid == true {
-            self.valid = false
+    private mutating func generateRandomNumber() -> Double {
+        if valid == true {
+            valid = false
             return next
         } else {
-            self.valid = true
+            valid = true
             let values = gaussian()
-            next = values.x
-            return values.y
+            next = values.y
+            return values.x
         }
     }
     
-    func gaussian() -> (x: Double, y: Double) {
-        //
+    private func gaussian() -> (x: Double, y: Double) {
+        let x = mean + scale(rho()) * thetaCos(theta(piFactor()))
+        let y = mean + scale(rho()) * thetaSin(theta(piFactor()))
+        return (x,y)
     }
     
-
+    private func piFactor() -> Double {
+        return 2 * M_PI
+    }
+    
+    private func theta(piFactor:Double) -> Double {
+        return piFactor * drand48()
+    }
+    
+    private func rho() -> Double {
+        return sqrt((-2 * log(1-drand48())))
+    }
+    
+    private func scale(rho: Double) -> Double {
+        return standardDeviation * rho
+    }
+    
+    private func thetaCos(theta: Double) -> Double {
+        return cos(theta)
+    }
+    
+    private func thetaSin(theta: Double) -> Double {
+        return sin(theta)
+    }
 }
