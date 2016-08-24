@@ -13,6 +13,8 @@
 		226153A01D6CE66D0010C605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2261539E1D6CE66D0010C605 /* Main.storyboard */; };
 		226153AB1D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226153AA1D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftTests.swift */; };
 		226153B61D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226153B51D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftUITests.swift */; };
+		226FE50D1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FE50C1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift */; };
+		226FE50E1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FE50C1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		226153B71D6CE66D0010C605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		226153C31D6CE9390010C605 /* PCGaussianDataGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCGaussianDataGenerator.h; sourceTree = "<group>"; };
 		226153C41D6CE9390010C605 /* PCGaussianDataGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCGaussianDataGenerator.m; sourceTree = "<group>"; };
+		226FE50C1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCGuassianDataGenerator.swift; sourceTree = "<group>"; };
+		226FE50F1D6DEAC400EF7584 /* TestPlayGround.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestPlayGround.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		2261538C1D6CE66C0010C605 = {
 			isa = PBXGroup;
 			children = (
+				226FE50F1D6DEAC400EF7584 /* TestPlayGround.playground */,
 				226153971D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwift */,
 				226153A91D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftTests */,
 				226153B41D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftUITests */,
@@ -101,6 +106,7 @@
 			children = (
 				226153981D6CE66D0010C605 /* AppDelegate.swift */,
 				2261539A1D6CE66D0010C605 /* ViewController.swift */,
+				226FE50C1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift */,
 				2261539C1D6CE66D0010C605 /* Assets.xcassets */,
 				2261539E1D6CE66D0010C605 /* Main.storyboard */,
 				226153A11D6CE66D0010C605 /* Info.plist */,
@@ -259,6 +265,7 @@
 			files = (
 				2261539B1D6CE66D0010C605 /* ViewController.swift in Sources */,
 				226153991D6CE66D0010C605 /* AppDelegate.swift in Sources */,
+				226FE50D1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				226153AB1D6CE66D0010C605 /* PCLaboratoryDataGeneratorSwiftTests.swift in Sources */,
+				226FE50E1D6DCB0E00EF7584 /* PCGuassianDataGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +490,7 @@
 				226153BC1D6CE66D0010C605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		226153BD1D6CE66D0010C605 /* Build configuration list for PBXNativeTarget "PCLaboratoryDataGeneratorSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				226153BF1D6CE66D0010C605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		226153C01D6CE66D0010C605 /* Build configuration list for PBXNativeTarget "PCLaboratoryDataGeneratorSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				226153C21D6CE66D0010C605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
