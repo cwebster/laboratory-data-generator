@@ -24,7 +24,7 @@ struct PCGaussianData {
     mutating func createDistribution() -> [Int:Double] {
         var results = [Int:Double]()
         
-        for index in 1...numResultsRequired {
+        for index in 0...numResultsRequired-1 {
             results[index] = generateRandomNumber()
             print("\(index) result is \(results[index])")
         }
